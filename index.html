@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapland Taiga Eco Hotel</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        #time-date {
+            margin-top: 20px;
+        }
+
+        #instagram-share {
+            margin-top: 20px;
+        }
+
+        #star-constellation {
+            margin-top: 30px;
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
+            margin: 20px 0;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Lapland Taiga Eco Hotel</h1>
+    
+    <!-- Weather, Ski, and Northern Lights Information -->
+    <div id="weather"></div>
+    <div id="snow"></div>
+    <div id="aurora"></div>
+
+    <!-- Parks Information -->
+    <h2>Explore Oulanka National Park</h2>
+    <div id="oulanka"></div>
+
+    <h2>Explore Riisitunturi National Park</h2>
+    <div id="riisitunturi"></div>
+
+    <h2>Discover Lake Kitka</h2>
+    <div id="kitka"></div>
+
+    <!-- Time and Date -->
+    <div id="time-date">
+        <h2>Current Date & Time</h2>
+        <p id="current-time"></p>
+    </div>
+
+    <!-- Instagram Share Button -->
+    <div id="instagram-share">
+        <h2>Share on Instagram</h2>
+        <button class="button" onclick="shareOnInstagram()">Share Now</button>
+    </div>
+
+    <!-- Star Constellation -->
+    <div id="star-constellation">
+        <h2>Current Star Constellation</h2>
+        <div id="constellation-map"></div>
+    </div>
+
+    <script src="snake.js"></script>
+</body>
+</html>
